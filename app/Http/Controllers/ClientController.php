@@ -4,18 +4,53 @@ namespace App\Http\Controllers;
 
 use App\Client;
 use Illuminate\Http\Request;
-use \Illuminate\Http\JsonResponse;
+
 
 class ClientController extends Controller
 {
-    public function index()
+
+
+
+    /*
+     * Returns all clients from a selected trainer
+     * */
+
+    public function index($id)
     {
 
+        $trainer_clients = Client::where('trainer_id', '=', $id)->get();
 
-        $all = Client::where('trainer_id', '=', 1)->get();
-        //dd($all);
+        return view('trainer', compact('trainer_clients'));
+    }
 
-        return view('trainer', compact('all'));
 
+
+
+    /*
+     * Return a view for creating a new client
+     * */
+
+    public function create()
+    {
+        return view('post');
+    }
+
+
+
+
+    /*
+     * Storing a new client
+     * */
+
+    public function store(Request $request, Client $client)
+    {
+        $client->clients_name = $request->clients_name;
+        $client->clients_age = $request->clients_age;
+        $client->height = $request->height;
+        $client->weight = $request->weight;
+        $client->trainer_id = $request->trainer_id;
+        $client->save();
+
+        return redirect('trainer/1');
     }
 }

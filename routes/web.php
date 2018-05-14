@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/trainer', 'ClientController@index');
+Route::get('/trainer/{id}', 'ClientController@index');
+Route::get('/client/create', 'ClientController@create');
+Route::post('/client/create', 'ClientController@store');
