@@ -967,6 +967,9 @@ header .form-inline {
 }
 .twt-feed.blue-bg {
     background: #58C9F3;
+    &.client {
+        padding: 10px;
+    }
 }
 .twt-category{
     display: inline-block;

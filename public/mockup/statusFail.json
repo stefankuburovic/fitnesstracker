@@ -1,0 +1,6 @@
+{
+  "status": 404, //Status ako je uspesan
+  "statusMessage": "Request failed, data that you are looking for doesn't exist", // Fail message
+  "token": "beardyfox", //Ovo stavi da postoji, trebace nam, nek bude statican za sad, nek bude tvoj username
+  "data" : []
+}

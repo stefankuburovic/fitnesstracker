@@ -1,0 +1,5 @@
+{
+  "status": 500, //Status ako je uspesan
+  "statusMessage": "Access Forbidden", // Fail message
+  "data" : []
+}

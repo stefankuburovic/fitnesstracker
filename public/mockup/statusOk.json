@@ -1,0 +1,47 @@
+{
+  "status": 200, //Status ako je uspesan
+  "statusMessage": "Request successfully executed ", // Success message
+  "token": "beardyfox", //Ovo stavi da postoji, trebace nam, nek bude statican za sad, nek bude tvoj username
+  "data" : [
+    {
+      "id": 1,
+      "clients_name": "Filip",
+      "clients_age": 23,
+      "height": 170,
+      "weight": 90,
+      "trainer_id": 1,
+      "created_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 5,
+      "clients_name": "Milan",
+      "clients_age": 36,
+      "height": 188,
+      "weight": 105,
+      "trainer_id": 1,
+      "created_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 9,
+      "clients_name": "Radosav",
+      "clients_age": 45,
+      "height": 171,
+      "weight": 95,
+      "trainer_id": 1,
+      "created_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 11,
+      "clients_name": "Stefan",
+      "clients_age": 27,
+      "height": 197,
+      "weight": 90,
+      "trainer_id": 1,
+      "created_at": "2018-06-12 15:43:21",
+      "updated_at": "2018-06-12 15:43:21"
+    }
+  ]
+}
